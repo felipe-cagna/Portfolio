@@ -1,0 +1,227 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ebebeb;
+}
+#perfil-res{
+    display: none;
+}
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    background-color: #d2d8da;
+    overflow: hidden;
+}
+aside img {
+    max-width: 50px;
+    height: auto;
+}
+aside h2 {
+    font-size: medium;
+}
+#foto-perfil {
+    min-width: 100px;
+    border-radius: 10%;
+    object-fit: unset;
+}
+#nombre-titulo {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin-left: 280px;
+    padding: 10px;
+}
+section {
+    padding: 10px 60px 60px 60px;
+    margin-bottom: 30px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 10px;
+}
+section h1 {
+    text-align: center;
+}
+.contenedor-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+}
+nav ul li {
+    margin: 5px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contacto img {
+    max-width: 30px;
+    height: auto;
+}
+.descargar-cv {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: currentColor;
+    font-size: 0.9em;
+}
+.descargar-cv p {
+    margin: 0;
+    margin-right: 5px;
+}
+.descargar-cv img {
+    max-width: 20px;
+    height: auto;
+}
+.selectores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.claro-oscuro {
+    cursor: pointer;
+    margin-left: 30px;
+}
+body.oscuro {
+    background-color: #1b1b1b;
+    color: #fff;
+}
+body.oscuro aside {
+    background-color: #3d3d3d;
+}
+body.oscuro nav ul li a {
+    color: #fff;
+}
+body.oscuro section {
+    background-color: rgba(39, 39, 39, 0.6);
+}
+.proyectos {
+    display: flex;
+    justify-content: space-around;
+}
+.proyectos div {
+    width: 45%;
+}
+.proyectos img {
+    width: 100%;
+    border-radius: 10px;
+}
+.herramientas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.herramientas h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: medium;
+}
+.herramientas div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+body.oscuro .herramientas div {
+    background-color: #313131;
+    color: #fff; /* Cambia el color del texto si es necesario */
+}
+.herramientas.oscuro div.oscuro{
+    background-color: #141414;
+}
+.herramientas div div {
+    text-align: center;
+    margin: 10px;
+    border: none;
+}
+.herramientas img {
+    width: 50px;
+    height: 50px;
+}
+.herramientas p {
+    margin: 5px;
+}
+
+@media (max-width:768px){
+    body{
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    #nombre-titulo h1,
+    #nombre-titulo h2{
+        margin: 2px;
+    }
+    aside{
+        position: relative;
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    .idioma{
+        padding: 5px;
+    }
+    nav{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        width: 100vw;
+        left: 0;
+    }
+    .contacto img{
+        width: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contacto{
+        justify-content:center;
+    }
+    main{
+        margin-left: 0;
+        margin: 1px;
+        padding: 0;
+    }
+    section{
+        margin-top: 10px;
+        margin: 5px;
+        padding: 10px;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .proyectos div{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .herramientas img {
+        width: 30px;
+        height: 30px;
+    }
+}
