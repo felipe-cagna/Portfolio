@@ -161,6 +161,9 @@ body.oscuro .herramientas div {
 .herramientas p {
     margin: 5px;
 }
+#formacion a{
+    color: rgb(37, 75, 165);
+}
 
 @media (max-width:768px){
     body{
