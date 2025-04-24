@@ -9,20 +9,23 @@ aside {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
     width: 280px;
     background-color: #d2d8da;
     overflow: hidden;
 }
+aside div{
+    padding-bottom: 20px;
+}
 aside img {
-    max-width: 50px;
+    width: 30px;
     height: auto;
 }
 aside h2 {
     font-size: medium;
 }
 #foto-perfil {
-    min-width: 100px;
+    width: 120px;
     border-radius: 10%;
     object-fit: unset;
 }
@@ -59,15 +62,22 @@ nav ul {
 }
 nav ul li {
     margin: 5px 0;
+    font-size: 1rem;
 }
 nav ul li a {
-    text-decoration: none;
-    color: #000;
+    text-decoration:none;
+    color: inherit;
 }
+
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
 .contacto {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    padding-top: 20px;
 }
 .contacto img {
     max-width: 30px;
@@ -93,6 +103,9 @@ nav ul li a {
     justify-content: space-between;
     width: 100%;
 }
+.idioma button:hover{
+    cursor: pointer;
+}
 .claro-oscuro {
     cursor: pointer;
     margin-left: 30px;
@@ -116,6 +129,8 @@ body.oscuro section {
 }
 .proyectos div {
     width: 45%;
+    min-width: 300px;
+    max-width: 600px;
 }
 .proyectos img {
     width: 100%;
@@ -176,7 +191,7 @@ body.oscuro .herramientas div {
     }
     aside{
         position: relative;
-        width: 100vw;
+        width: 100%;
         margin-bottom: 10px;
     }
     .idioma{
